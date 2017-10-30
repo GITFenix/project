@@ -2,12 +2,16 @@ version: '2'
 services:
   web:
     build: .
+    volumes:
+      - .:/var/www/project
   nginx:
-    image: nginx:1.9.4
+    image: nginx:1.13.6
     links:
-      - web 
+      - web
     volumes_from:
       - web
+    volumes:
+          - ./docker/nginx_vhost.conf:/etc/nginx/conf.d/default.conf
     expose:
       - "80"
     ports:
