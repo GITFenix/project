@@ -10,6 +10,13 @@
     <php>
         <ini name="error_reporting" value="-1" />
         <server name="KERNEL_CLASS" value="AppKernel" />
+
+        <!-- ###+ symfony/framework-bundle ### -->
+        <env name="APP_ENV" value="dev"/>
+        <env name="APP_SECRET" value="3f5ef9fb91c4b46467a00614f2926ad4"/>
+        <!-- 127.0.0.1,127.0.0.2 -->
+        <!-- localhost,example.com -->
+        <!-- ###- symfony/framework-bundle ### -->
     </php>
 
     <testsuites>
