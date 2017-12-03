@@ -5,4 +5,4 @@ jobs:
        - image: circleci/php:7.2-fpm
      steps:
        - checkout
-- run: echo "hello world"
+       - run: echo "hello world"
